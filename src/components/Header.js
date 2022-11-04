@@ -13,10 +13,10 @@ const Header = () => {
     <MenuS>
         <div className="menu-container">
             <ul>
-                <li><Link to="/nosotros">Nosotros</Link></li>
-                <li><Link to="/servicios">servicios</Link></li>
-                <li><Link to="/portafolio">portafolio</Link></li>
-                <li><Link to="/contacto">CONTÁCTANOS</Link></li>
+                <li><Link to="/nosotros" className="active">Nosotros</Link></li>
+                <li><Link to="/servicios" className="">servicios</Link></li>
+                <li><Link to="/portafolio"className="">portafolio</Link></li>
+                <li><Link to="/contacto"className="">CONTÁCTANOS</Link></li>
             </ul>
         </div>
     </MenuS>

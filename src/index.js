@@ -5,14 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import { TaskContextProvider } from './context/TaskContext';
+import GlobalStyle from './styles/GlobalStyles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <TaskContextProvider>
+    <GlobalStyle />
     <BrowserRouter>
       <App />
-      
-    
     </BrowserRouter>
 
   </TaskContextProvider>
