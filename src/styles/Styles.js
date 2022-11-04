@@ -72,6 +72,12 @@ export const LoadingS = styled.div`
 
 export const NosotroS = styled.div`
   width: 100%;
+  img{
+        display: block;
+        object-fit: cover;
+        object-position: center top;
+        width: 100%;
+  }
   .abaout-us-containter {
     width: 100%;
     max-width: 1500px;
