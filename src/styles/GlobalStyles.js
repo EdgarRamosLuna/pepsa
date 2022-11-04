@@ -24,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
     h1{
         font-family: 'AB';
     }
+    img{
+        display: block;
+        object-fit: cover;
+        object-position: center top;
+        width: 100%;
+    }
 `;
 
 export default GlobalStyle;
