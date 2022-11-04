@@ -9,6 +9,10 @@ export const HeaderS = styled.div`
   background-position: -1px 0px;
   margin: 0;
   background-color: #005399;
+  @media(max-width:1580px){
+    background-size: cover;
+    background-position: center;
+  }
 `;
 export const MenuS = styled.div`
   width: 100%;
