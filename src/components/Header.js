@@ -13,7 +13,7 @@ const Header = () => {
   const load = () =>{
     setLoaded(false);
     setLoading(true);
-    clearLoading(500);
+    clearLoading(1000);
   }
   return (
     <>
