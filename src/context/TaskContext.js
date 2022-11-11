@@ -6,22 +6,27 @@ export const TaskContext = createContext();
 export const TaskContextProvider = (props) => {
     const [loading, setLoading] = useState(true);
     const [loaded, setLoaded] = useState(false);
-    
-    useState(() =>{
-      setLoading(true);
+    const clearLoading = (interval = 1000) =>{
       setTimeout(() => {
         setLoaded(true);
         setTimeout(() => {
           setLoading(false);
         }, 500);
-      }, 1000);
+      }, interval);
+    }
+    useState(() =>{
+      console.log("entro")
+      setLoading(true);
+      clearLoading();
     }, [])
     return (
         <TaskContext.Provider
           value={{
             loading,
             loaded,
-            setLoaded
+            setLoaded,
+            setLoading,
+            clearLoading,
           }}
         >
           {props.children}
