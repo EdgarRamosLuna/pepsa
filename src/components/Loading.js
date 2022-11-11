@@ -6,7 +6,7 @@ const Loading = (props) => {
   const {loaded} = useContext(TaskContext);
   return (
     <LoadingS loaded={loaded}>
-        <img src="/assets/img/loading.svg"/>
+        <img src="/assets/img/loading.svg" style={{width:"16%"}}/>
     </LoadingS>
   )
 }

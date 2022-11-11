@@ -10,8 +10,9 @@ const Footer = () => {
             <h3>Redes Sociales</h3>
           </div>
           <div className="item-data">
-            <li className="fb">PEPSA MX</li>
-            <li className="ig">pepsa_mx</li>
+            <p className="fb"><i class="fa-brands fa-square-facebook"></i><div>PEPSA MX</div></p>
+            <p className="ig"><i class="fa-brands fa-instagram"></i><div>pepsa_mx</div></p>
+            
           </div>
         </div>
         <div className="footer-item">
@@ -19,7 +20,9 @@ const Footer = () => {
             <h3>Llámanos</h3>
           </div>
           <div className="item-data">
-            <div className="item-img"></div>
+            <div className="item-img">
+            <i class="fa-solid fa-phone"></i>
+            </div>
             <div className="item-txt">
               <p>844 415 4023</p>
               <p>844 286 6227</p>
@@ -31,7 +34,9 @@ const Footer = () => {
             <h3>Ubicación</h3>
           </div>
           <div className="item-data">
-            <div className="item-img"></div>
+            <div className="item-img">
+            <i class="fa-solid fa-location-dot"></i>
+            </div>
             <div className="item-txt">
               <p>Col. La Encantada, CP 25307</p>
               <p>Saltillo Coah, Mex</p>
@@ -43,7 +48,9 @@ const Footer = () => {
             <h3>Correo</h3>
           </div>
           <div className="item-data">
-            <div className="item-img"></div>
+            <div className="item-img">
+            <i class="fa-solid fa-envelope"></i>
+            </div>
             <div className="item-txt">
               <p>Col. La Encantada, CP 25307</p>
               <p>Saltillo Coah, Mex</p>
