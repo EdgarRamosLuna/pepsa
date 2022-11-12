@@ -104,10 +104,13 @@ const ModalPort = (props) => {
   const {setShowModal, setIsModal,setLoaded, setLoading,clearLoading} = useContext(TaskContext);
   const hideModal = ()=>{
     setIsModal(false);
-    setShowModal(false);
-    setLoaded(false);
     setLoading(true);
-    clearLoading(300);
+    setTimeout(() => {
+        setShowModal(false);
+        setLoaded(false);
+        clearLoading(300);
+    }, 300);
+    
   }
   return (
     <Modal onClick={hideModal}>
