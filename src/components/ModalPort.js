@@ -107,7 +107,7 @@ const ModalPort = (props) => {
     setShowModal(false);
     setLoaded(false);
     setLoading(true);
-    clearLoading(100);
+    clearLoading(300);
   }
   return (
     <Modal onClick={hideModal}>
