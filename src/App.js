@@ -15,12 +15,15 @@ import Portafolio from './pages/Portafolio';
 import Contacto from './pages/Contacto';
 import { TaskContext } from './context/TaskContext';
 import Loading from './components/Loading';
+import GlobalStyle from './styles/GlobalStyles';
 
 function App() {
-  const {loading} = useContext(TaskContext);
+  const {loading, isModal} = useContext(TaskContext);
   return (
     <>
+     <GlobalStyle isModal={isModal} />
     {loading && <Loading />} 
+   
      <Routes>
         <Route element={<Header />}>
           <Route path="/" element={<Nostros />} />

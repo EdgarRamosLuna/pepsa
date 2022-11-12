@@ -8,7 +8,11 @@ const GlobalStyle = createGlobalStyle`
         font-family: Open-Sans, Helvetica, Sans-Serif;*/
         //overflow-y: ${(props) => (props.isModal ? "hidden" : "")};
         overflow-x: hidden;
+        overflow-y: ${(props) => (props.isModal ? "hidden" : "")};
         
+    }
+    html{
+        overflow-y: ${(props) => (props.isModal ? "hidden" : "auto")};
     }
     @font-face {
         font-family: 'AB';

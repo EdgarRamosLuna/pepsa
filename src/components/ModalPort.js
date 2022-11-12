@@ -101,12 +101,19 @@ const data = [
 
 const ModalPort = (props) => {
   const {idModal} = props;
-  const {setShowModal} = useContext(TaskContext);
+  const {setShowModal, setIsModal,setLoaded, setLoading,clearLoading} = useContext(TaskContext);
+  const hideModal = ()=>{
+    setIsModal(false);
+    setShowModal(false);
+    setLoaded(false);
+    setLoading(true);
+    clearLoading(100);
+  }
   return (
-    <Modal onClick={(e) => setShowModal(false)}>
+    <Modal onClick={hideModal}>
         
         <div className="container" onClick={(e) => {e.stopPropagation();}}>
-        <div className="closeModal" onClick={(e)=> setShowModal(false)}>
+        <div className="closeModal" onClick={hideModal}>
             <i class="fa-solid fa-xmark"></i>
         </div>
         {

@@ -10,7 +10,7 @@ import GlobalStyle from './styles/GlobalStyles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <TaskContextProvider>
-    <GlobalStyle />
+    
     <BrowserRouter>
       <App />
     </BrowserRouter>
