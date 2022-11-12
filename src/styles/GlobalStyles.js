@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         
     }
     html{
-        overflow-y: ${(props) => (props.isModal ? "hidden" : "auto")};
+      //  overflow-y: ${(props) => (props.isModal ? "hidden" : "auto")};
     }
     @font-face {
         font-family: 'AB';
