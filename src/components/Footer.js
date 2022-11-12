@@ -51,8 +51,8 @@ const Footer = () => {
             <i class="fa-solid fa-envelope"></i>
             </div>
             <div className="item-txt">
-              <p>Col. La Encantada, CP 25307</p>
-              <p>Saltillo Coah, Mex</p>
+            <a href="mailto:contacto@serviciospepsa.com">contacto@serviciospepsa.com</a>
+            <a href="mailto:jose.aguayo@serviciospepsa.com">jose.aguayo@serviciospepsa.com</a>
             </div>
           </div>
         </div>
