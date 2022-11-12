@@ -4,9 +4,10 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import { TaskContext } from '../context/TaskContext'
 import { HeaderS, MenuS } from '../styles/Styles'
 import Footer from './Footer'
+import ModalPort from './ModalPort'
 
 const Header = () => {
-  const {loading, setLoading, setLoaded, clearLoading} = useContext(TaskContext);
+  const {loading, setLoading, setLoaded, clearLoading, showModal, setIdModal, idModal} = useContext(TaskContext);
   const location = useLocation();
   const path = location.pathname.replaceAll("/", "");
   console.log(path);
@@ -17,6 +18,7 @@ const Header = () => {
   }
   return (
     <>
+    {showModal && <ModalPort idModal={idModal}/>}
     <HeaderS />
     <MenuS>
         <div className="menu-container">

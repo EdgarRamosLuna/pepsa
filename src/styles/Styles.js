@@ -382,6 +382,7 @@ export const PortafolioS = styled.div`
   align-items: center;
   text-align: center;
   margin: 50px 0;
+  flex-wrap:wrap;
   .item-txt {
     font-size: 2.2em;
     width: 50%;
@@ -394,4 +395,84 @@ export const PortafolioS = styled.div`
       font-size: 1.3em;
     }
   }
+  .item-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+  margin: 0 auto;
+  }
+`;
+export const ImgS = styled.div`
+width: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 16px auto;
+min-height: 330px;
+height: 100%;
+min-width: 313px;
+
+img {
+  display: block;
+  object-fit: contain;
+  object-position: center top;
+  max-width: 333px;
+  width: auto;
+  height: 100%;
+  transition:all 0.3s ;
+  cursor: pointer;
+  &:hover{
+    scale: 1.1;
+    transition: all 0.3s;
+  }
+}
+`;
+export const StyledP = styled.div`
+height: 75vh;
+overflow: auto;
+margin: auto;
+width: 95%;
+`;
+export const Modal = styled.div`
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 9;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #0000002e;
+
+.container {
+
+  width: 90%;
+  margin: 0 auto;
+  background: #005399;
+  height: 90%;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 2em;
+  white-space: pre-line;
+  display: flex;
+  position: relative;
+
+}
+.closeModal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #005399;
+  background: #fff;
+}
 `;

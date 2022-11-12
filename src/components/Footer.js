@@ -25,7 +25,6 @@ const Footer = () => {
             </div>
             <div className="item-txt">
               <p>844 415 4023</p>
-              <p>844 286 6227</p>
             </div>
           </div>
         </div>

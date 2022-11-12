@@ -15,10 +15,12 @@ export const TaskContextProvider = (props) => {
       }, interval);
     }
     useState(() =>{
-      console.log("entro")
+      
       setLoading(true);
       clearLoading();
     }, [])
+    const [showModal, setShowModal] = useState(false);
+    const [idModal, setIdModal] = useState(0);
     return (
         <TaskContext.Provider
           value={{
@@ -27,6 +29,8 @@ export const TaskContextProvider = (props) => {
             setLoaded,
             setLoading,
             clearLoading,
+            showModal, setShowModal,
+            idModal, setIdModal
           }}
         >
           {props.children}
