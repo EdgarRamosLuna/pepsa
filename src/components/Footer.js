@@ -51,8 +51,10 @@ const Footer = () => {
             <i class="fa-solid fa-envelope"></i>
             </div>
             <div className="item-txt">
-            <a href="mailto:contacto@serviciospepsa.com">contacto@serviciospepsa.com</a>
-            <a href="mailto:jose.aguayo@serviciospepsa.com">jose.aguayo@serviciospepsa.com</a>
+              <div className="item-link">
+                <a href="mailto:contacto@serviciospepsa.com">contacto@serviciospepsa.com</a>
+                <a href="mailto:jose.aguayo@serviciospepsa.com">jose.aguayo@serviciospepsa.com</a>
+              </div>
             </div>
           </div>
         </div>

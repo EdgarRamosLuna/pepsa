@@ -71,6 +71,14 @@ export const FooterS = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .item-link {
+      display: flex;
+      flex-direction: column;
+     a{
+      text-decoration: none;
+      color: #fff;
+     }
+  }
   .item-title {
     width: 100%;
     display: flex;
@@ -484,9 +492,6 @@ export const ContactoS = styled.div`
   * {
     color: #005399;
   }
-  p{
-    margin:0;
-  }
   .contacto-footer {
     width: 100%;
     display: -webkit-box;
@@ -537,7 +542,7 @@ export const CcS = styled.div`
   }
   .item-txt {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     align-items: center;
   }
   .item-txt-data {
@@ -570,7 +575,7 @@ height:100vh ;*/
   .fb,
   .ig {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     align-items: center;
   }
   i {
