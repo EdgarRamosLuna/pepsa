@@ -40,8 +40,8 @@ Saltillo Coah, Mex`}</p>
               </div>
               <div className="item-txt">
                   <div className="item-txt-data">
-                    <a className="fb"><i class="fa-brands fa-square-facebook"></i><div>PEPSA MX</div></a>
-                    <a className="ig"><i class="fa-brands fa-instagram"></i><div>pepsa_mx</div></a>
+                    <a className="fb" href="#"><i class="fa-brands fa-square-facebook"></i><div>PEPSA MX</div></a>
+                    <a className="ig" href="#"><i class="fa-brands fa-instagram"></i><div>pepsa_mx</div></a>
                   </div>
               </div>
           </div>
