@@ -342,7 +342,7 @@ export const Svg = styled.div`
   }
   .cls-3 {
     font-size: 29.63px;
-    font-family: Poppins-SemiBold, Poppins;
+    //font-family: Poppins-SemiBold, Poppins;
     font-weight: 600;
   }
   .cls-4,
