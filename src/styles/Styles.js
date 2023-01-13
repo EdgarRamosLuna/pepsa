@@ -421,6 +421,8 @@ export const ImgS = styled.div`
   min-height: 330px;
   height: 100%;
   min-width: 313px;
+  box-sizing: border-box;
+  padding: 0 10px;
 
   img {
     display: block;
@@ -581,4 +583,61 @@ height:100vh ;*/
   i {
     color: #005399;
   }
+`;
+
+
+export const Modal2S = styled.div`
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #00000047;
+  color: #fff;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    background: #005399;
+    height: 90%;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 2em;
+    white-space: pre-line;
+    display: flex;
+    position: relative;
+  }
+  .closeModal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #005399;
+    background: #fff;
+  }
+  .Logo {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 100%;
+  background: #fff;
+  img {
+  width: 65% !important;
+
+}
+}
 `;

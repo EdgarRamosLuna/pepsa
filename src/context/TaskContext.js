@@ -11,8 +11,8 @@ export const TaskContextProvider = (props) => {
         setLoaded(true);
         setTimeout(() => {
           setLoading(false);
-        }, 500);
-      }, interval);
+        }, 300);
+      }, 300);
     }
     useState(() =>{
       
@@ -22,6 +22,7 @@ export const TaskContextProvider = (props) => {
     const [showModal, setShowModal] = useState(false);
     const [idModal, setIdModal] = useState(0);
     const [isModal, setIsModal] = useState(false);
+    const [showModal2, setShowModal2] = useState(false);
     return (
         <TaskContext.Provider
           value={{
@@ -31,6 +32,7 @@ export const TaskContextProvider = (props) => {
             setLoading,
             clearLoading,
             showModal, setShowModal,
+            showModal2, setShowModal2,
             idModal, setIdModal,
             isModal, setIsModal
           }}

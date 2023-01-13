@@ -16,6 +16,8 @@ import Contacto from './pages/Contacto';
 import { TaskContext } from './context/TaskContext';
 import Loading from './components/Loading';
 import GlobalStyle from './styles/GlobalStyles';
+import Test from './pages/Test';
+import TestImg from './components/TestImg';
 
 function App() {
   const {loading, isModal} = useContext(TaskContext);
@@ -27,6 +29,7 @@ function App() {
      <Routes>
         <Route element={<Header />}>
           <Route path="/" element={<Nostros />} />
+          <Route path="/test" element={<TestImg />} />
           <Route path="/nosotros" element={<Nostros />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/portafolio" element={<Portafolio />} />

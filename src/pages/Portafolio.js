@@ -9,7 +9,12 @@ const Portafolio = () => {
   console.log(imgsData);
   let len = imgsData.length;
   
-  const {showModal, idModal, setIdModal} = useContext(TaskContext);
+  const {showModal, idModal, setIdModal, setShowModal2} = useContext(TaskContext);
+
+  const showText = (item) =>{
+    setShowModal2(true);
+    setIdModal(item);
+  }
   return (
     <>
     
@@ -27,7 +32,7 @@ los que se encuentran:</p>
           })*/
           imgsData.map((d, ind) => {
             return (
-              <Imgs img={d.img} id={ind+1} onClick={(e) =>setIdModal(ind+1)} />
+              <Imgs img={d.img} id={ind+1} onClick={(e) =>showText(ind+1)} />
             )
           })
         }
