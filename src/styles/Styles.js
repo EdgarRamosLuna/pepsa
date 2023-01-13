@@ -72,12 +72,12 @@ export const FooterS = styled.div`
     flex-direction: column;
   }
   .item-link {
-      display: flex;
-      flex-direction: column;
-     a{
+    display: flex;
+    flex-direction: column;
+    a {
       text-decoration: none;
       color: #fff;
-     }
+    }
   }
   .item-title {
     width: 100%;
@@ -181,7 +181,7 @@ export const NosotroS = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin: 30px 0;
     h1 {
       font-size: 2.5em !important;
       color: #005399;
@@ -207,15 +207,15 @@ export const NosotroS = styled.div`
 
   .s1-img {
     width: 50%;
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
       display: block;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center top;
-      width: 100%;
+      width: 50%;
     }
   }
   .s1-txt {
@@ -224,8 +224,8 @@ export const NosotroS = styled.div`
     align-content: center;
     text-align: center;
     max-width: 50%;
-    font-size: 1.6em;
-    height: 500px;
+    font-size: 1.2em;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,7 +240,7 @@ export const NosotroS = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.2em;
     white-space: pre-line;
   }
   .s3-container {
@@ -252,7 +252,7 @@ export const NosotroS = styled.div`
   }
   .s3-title {
     h1 {
-      font-size: 4.5em !important;
+      font-size: 2.5em !important;
       color: #005399;
       position: relative;
       margin: 0;
@@ -265,20 +265,40 @@ export const NosotroS = styled.div`
     text-align: center;
     justify-content: center;
     max-width: 1200px;
-    font-size: 2em;
+    font-size: 1.2em;
     margin-bottom: 10px;
   }
   .s3-img {
     width: 90%;
     display: flex;
     margin: 0 auto;
+    justify-content: center;
     img {
       display: block;
       object-fit: cover;
       object-position: center top;
-      width: 100%;
+      width: 50%;
     }
   }
+  .s2-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #005399;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .item2-img {
+    max-width: 20.33%;
+    width: 100%;
+  }
+  .s2 {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 100px;
+  background: #005399;
+}
 `;
 
 export const ServiciosS = styled.div`
@@ -303,7 +323,7 @@ export const ServiciosS = styled.div`
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    font-size: 2.2em;
+    font-size: 1.5em;
     white-space: pre-line;
     max-width: 60%;
     h1,
@@ -331,6 +351,15 @@ export const ServiciosS = styled.div`
     flex-direction: column;
     overflow-x: hidden;
   }
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .item2-img {
+    width: auto;
+    margin: 5px 0;
+  }
 `;
 export const Svg = styled.div`
   .cls-1 {
@@ -341,7 +370,7 @@ export const Svg = styled.div`
     fill: #fff;
   }
   .cls-3 {
-    font-size: 29.63px;
+    font-size: 28.63px;
     //font-family: Poppins-SemiBold, Poppins;
     font-weight: 600;
   }
@@ -392,7 +421,7 @@ export const PortafolioS = styled.div`
   margin: 50px 0;
   flex-wrap: wrap;
   .item-txt {
-    font-size: 2.2em;
+    font-size: 1.5em;
     width: 50%;
     margin: 0 auto;
     h1,
@@ -585,7 +614,6 @@ height:100vh ;*/
   }
 `;
 
-
 export const Modal2S = styled.div`
   position: fixed;
   z-index: 999;
@@ -627,17 +655,16 @@ export const Modal2S = styled.div`
     background: #fff;
   }
   .Logo {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  border-radius: 100%;
-  background: #fff;
-  img {
-  width: 65% !important;
-
-}
-}
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 100%;
+    background: #fff;
+    img {
+      width: 65% !important;
+    }
+  }
 `;

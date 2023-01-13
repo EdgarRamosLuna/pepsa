@@ -120,7 +120,7 @@ const Modal2 = () => {
         }}
       >
         <div className="closeModal" onClick={()=> setShowModal2(false)}>
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </div>
         {data.map((datas, i) => {
           return (

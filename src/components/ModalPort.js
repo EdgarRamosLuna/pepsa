@@ -117,7 +117,7 @@ const ModalPort = (props) => {
         
         <div className="container" onClick={(e) => {e.stopPropagation();}}>
         <div className="closeModal" onClick={hideModal}>
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
         </div>
         {
             data.map((datas, i) =>{

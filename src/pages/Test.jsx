@@ -294,7 +294,7 @@ const Test = () => {
 						<path id="TRUENO-3" data-name="TRUENO" class="cls-2" d="M813.05,135.45a2.5,2.5,0,0,1-1.23-.33,2.44,2.44,0,0,1-1.08-2.89l11.07-32.89H800.62a2.44,2.44,0,0,1-1.85-4l48.82-56.58a2.44,2.44,0,0,1,4.13,2.44L837,80.92h20.48a2.42,2.42,0,0,1,2.22,1.44,2.45,2.45,0,0,1-.41,2.62l-44.41,49.65A2.4,2.4,0,0,1,813.05,135.45Zm-7.12-41H825.2a2.4,2.4,0,0,1,2,1,2.43,2.43,0,0,1,.33,2.2l-8.36,24.87L852,85.79H833.48a2.44,2.44,0,0,1-2.29-3.28l11.27-30.37Z" />
 					</g>
 				</g>
-				<g id="_001" data-name="001" onClick={()=> alert("AAAAAAAAAAAAAAAAAAAAA pitooooooooooooooooooooooooo piiiiiiiiiiiitooooooo")}>
+				<g id="_001" data-name="001">
 					<g id="CUADRO-2" data-name="CUADRO">
 						<rect class="cls-1" x="2.69" y="2.69" width="473.49" height="473.49" />
 						<path class="cls-2" d="M473.49,5.39v468.1H5.39V5.39h468.1M478.88,0H0V478.88H478.88V0Z" />
