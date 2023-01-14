@@ -13,6 +13,9 @@ export const HeaderS = styled.div`
     background-size: cover;
     background-position: center;
   }
+  @media (max-width: 1380px) {
+    height: 115px;
+  }
 `;
 export const MenuS = styled.div`
   width: 100%;
@@ -30,6 +33,12 @@ export const MenuS = styled.div`
         font-size: 2em;
         font-family: "CD";
         transition: all 0.3s;
+        @media(max-width:1380px){ 
+          font-size: 1.5em;
+        }
+        @media(max-width:980px){ 
+          font-size: 1em;
+        }
         &:hover {
           transition: all 0.3s;
           color: #fff;
@@ -65,11 +74,22 @@ export const FooterS = styled.div`
     max-width: 90%;
     margin: 0 auto;
     height: 300px;
+    @media(max-width:1580px){
+      height:200px;
+    }
   }
   .footer-item {
     width: auto;
     display: flex;
     flex-direction: column;
+    @media(max-width:1580px){
+      box-sizing: border-box;
+      padding: 0 25px;
+      font-size: 0.8em;
+    }
+    @media(max-width:1180px){
+      font-size: 0.7em;
+    }
   }
   .item-link {
     display: flex;
@@ -111,6 +131,9 @@ export const FooterS = styled.div`
       margin-block-end: 0;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
+      @media(max-width:1580px){
+        font-size: 1.1em;
+      }
     }
     p {
       display: flex;
@@ -160,6 +183,10 @@ export const NosotroS = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    @media(max-width:1580px){
+      width: 90%;
+      margin: 0 auto;
+    }
     h1 {
       font-size: 2.5em !important;
       color: #005399;
@@ -216,6 +243,9 @@ export const NosotroS = styled.div`
       object-fit: contain;
       object-position: center top;
       width: 50%;
+      @media(max-width:1380px){
+        width: 70%;
+      }
     }
   }
   .s1-txt {
@@ -229,6 +259,12 @@ export const NosotroS = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width:1580px){
+      font-size: 1em;
+    }
+    @media(max-width:1180px){
+      font-size: 0.8em;
+    }
   }
   .s1-txt h1,
   h2 {
@@ -242,6 +278,12 @@ export const NosotroS = styled.div`
     text-align: center;
     font-size: 1.2em;
     white-space: pre-line;
+    @media(max-width:1580px){
+      font-size: 1em;
+    }
+    @media(max-width:1180px){
+      font-size: 0.8em;
+    }
   }
   .s3-container {
     width: 100%;
@@ -256,6 +298,12 @@ export const NosotroS = styled.div`
       color: #005399;
       position: relative;
       margin: 0;
+      @media(max-width:1380px){
+        font-size: 2em !important;
+      }
+      @media(max-width:1180px){
+        font-size: 1.7em !important;
+      }
     }
   }
   .s3-txt {
@@ -287,10 +335,14 @@ export const NosotroS = styled.div`
     justify-content: space-evenly;
     width: 80%;
     margin: 0 auto;
+    @media(max-width:1180px){
+      width: 100%;
+    }
   }
   .item2-img {
     max-width: 20.33%;
     width: 100%;
+    
   }
   .s2 {
   width: 100%;
@@ -359,6 +411,17 @@ export const ServiciosS = styled.div`
   .item2-img {
     width: auto;
     margin: 5px 0;
+    @media(max-width:1580px){
+      max-width:32.33%;
+    }
+    img{
+      @media(max-width:1280px){
+        display: block;
+        object-fit: contain;
+        object-position: center center;
+        height: 100%;
+      }
+    }
   }
 `;
 export const Svg = styled.div`

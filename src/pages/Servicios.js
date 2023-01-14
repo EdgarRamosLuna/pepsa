@@ -7,10 +7,12 @@ import Test from "./Test";
 const Servicios = () => {
   const cantImg = 12;
   const [items, setItems] = useState([]);
+  const [isMaped, setIsMaped] = useState(false);
   useEffect(() => {
     for (let i = 1; i <= cantImg; i++) {
       const element = cantImg[i];
       setItems((prev) => [...prev, { i }]);
+      setIsMaped(true);
     }
   }, []);
 
@@ -33,13 +35,24 @@ const Servicios = () => {
       </div>
       <div className="container-2">
         <div className="items-container">
-          {items.map((data, indx) => {
-            return (
-              <div className="item2-img" key={indx}>
-                <img src={`/assets/img/servicios/${data.i}.png`} alt="" />
-              </div>
-            );
-          })}
+          {isMaped ? (
+            items.map((data, indx) => {
+              return (
+                <div className="item2-img" key={indx}>
+                  <img
+                    src={`/assets/img/servicios/${data.i}.png`}
+                    alt=""
+                    width="446"
+                    height="466"
+                  />
+                </div>
+              );
+            })
+          ) : (
+            <div className="loading">
+              <img src="/assets/img/loading.svg" alt="" />
+            </div>
+          )}
         </div>
       </div>
     </ServiciosS>
