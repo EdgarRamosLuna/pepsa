@@ -14,8 +14,8 @@ export const TaskContextProvider = (props) => {
         setLoaded(true);
         setTimeout(() => {
           setLoading(false);
-        }, 300);
-      }, 300);
+        }, 500);
+      }, interval);
     }
     useState(() =>{
       for (let i = 1; i <= cantImg; i++) {
