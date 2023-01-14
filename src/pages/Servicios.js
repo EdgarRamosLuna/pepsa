@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { memo } from "react";
 import { useEffect } from "react";
 import Services from "../components/Services";
 import { ServiciosS } from "../styles/Styles";
@@ -38,4 +37,4 @@ const Servicios = () => {
   );
 };
 
-export default memo(Servicios);
+export default Servicios;
