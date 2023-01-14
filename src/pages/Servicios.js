@@ -1,19 +1,15 @@
 import React from "react";
 import { useState } from "react";
+import { memo } from "react";
 import { useEffect } from "react";
+import Services from "../components/Services";
 import { ServiciosS } from "../styles/Styles";
 import Test from "./Test";
 
 const Servicios = () => {
-  const cantImg = 12;
-  const [items, setItems] = useState([]);
-  const [isMaped, setIsMaped] = useState(false);
+
   useEffect(() => {
-    for (let i = 1; i <= cantImg; i++) {
-      const element = cantImg[i];
-      setItems((prev) => [...prev, { i }]);
-      setIsMaped(true);
-    }
+   
   }, []);
 
   return (
@@ -35,28 +31,11 @@ const Servicios = () => {
       </div>
       <div className="container-2">
         <div className="items-container">
-          {isMaped ? (
-            items.map((data, indx) => {
-              return (
-                <div className="item2-img" key={indx}>
-                  <img
-                    src={`/assets/img/servicios/${data.i}.png`}
-                    alt=""
-                    width="446"
-                    height="466"
-                  />
-                </div>
-              );
-            })
-          ) : (
-            <div className="loading">
-              <img src="/assets/img/loading.svg" alt="" />
-            </div>
-          )}
+          <Services />
         </div>
       </div>
     </ServiciosS>
   );
 };
 
-export default Servicios;
+export default memo(Servicios);

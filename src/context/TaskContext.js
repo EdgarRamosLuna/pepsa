@@ -6,6 +6,9 @@ export const TaskContext = createContext();
 export const TaskContextProvider = (props) => {
     const [loading, setLoading] = useState(true);
     const [loaded, setLoaded] = useState(false);
+    const cantImg = 12;
+    const [items, setItems] = useState([]);
+    const [isMaped, setIsMaped] = useState(false);
     const clearLoading = (interval = 1000) =>{
       setTimeout(() => {
         setLoaded(true);
@@ -15,7 +18,11 @@ export const TaskContextProvider = (props) => {
       }, 300);
     }
     useState(() =>{
-      
+      for (let i = 1; i <= cantImg; i++) {
+        const element = cantImg[i];
+        setItems((prev) => [...prev, { i }]);
+        setIsMaped(true);
+      }
       setLoading(true);
       clearLoading();
     }, [])
@@ -34,7 +41,9 @@ export const TaskContextProvider = (props) => {
             showModal, setShowModal,
             showModal2, setShowModal2,
             idModal, setIdModal,
-            isModal, setIsModal
+            isModal, setIsModal,
+            items, setItems,
+            isMaped, setIsMaped
           }}
         >
           {props.children}

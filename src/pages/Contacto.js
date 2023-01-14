@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 import { CcS, ContactoS } from '../styles/Styles'
 
 const Contacto = () => {
@@ -74,4 +75,4 @@ Saltillo Coah, Mex`}</p>
   )
 }
 
-export default Contacto
+export default memo(Contacto);

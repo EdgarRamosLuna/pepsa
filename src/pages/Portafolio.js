@@ -5,6 +5,7 @@ import Imgs from '../components/Imgs';
 import ModalPort from '../components/ModalPort';
 import { useContext } from 'react';
 import { TaskContext } from '../context/TaskContext';
+import { memo } from 'react';
 const Portafolio = () => {
   console.log(imgsData);
   let len = imgsData.length;
@@ -43,4 +44,4 @@ los que se encuentran:</p>
   )
 }
 
-export default Portafolio
+export default memo(Portafolio)

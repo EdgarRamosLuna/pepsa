@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 import { useContext } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { TaskContext } from '../context/TaskContext'
@@ -39,4 +40,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default memo(Header)

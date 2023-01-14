@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { NosotroS } from "../styles/Styles";
@@ -71,4 +72,4 @@ const Nostros = () => {
   );
 };
 
-export default Nostros;
+export default memo(Nostros);

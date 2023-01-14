@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { memo } from 'react';
 import { TaskContext } from '../context/TaskContext';
 import { Modal2S, StyledP } from '../styles/Styles';
 const data = [
@@ -139,4 +140,4 @@ const Modal2 = () => {
   )
 }
 
-export default Modal2
+export default memo(Modal2);

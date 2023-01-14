@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { memo } from 'react';
 import { TaskContext } from '../context/TaskContext';
 import { ImgS } from '../styles/Styles';
 
@@ -21,4 +22,4 @@ const Imgs = (props) => {
   )
 }
 
-export default Imgs
+export default memo(Imgs)
