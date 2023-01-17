@@ -9,11 +9,12 @@ const Portafolio = () => {
   console.log(imgsData);
   let len = imgsData.length;
   
-  const {showModal, idModal, setIdModal, setShowModal2} = useContext(TaskContext);
+  const {showModal, idModal, setIdModal, setShowModal2, setIsModal} = useContext(TaskContext);
 
   const showText = (item) =>{
     setShowModal2(true);
     setIdModal(item);
+    setIsModal(true);
   }
   return (
     <>

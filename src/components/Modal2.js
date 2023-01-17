@@ -111,7 +111,12 @@ const data = [
   ];
 
 const Modal2 = () => {
-   const {setShowModal2, idModal} = useContext(TaskContext);
+   const {setShowModal2, idModal, setIsModal} = useContext(TaskContext);
+
+   const closeModal = () =>{
+    setIsModal(false);
+    setShowModal2(false)
+   }
   return (
     <Modal2S>
        <div
@@ -120,7 +125,7 @@ const Modal2 = () => {
           e.stopPropagation();
         }}
       >
-        <div className="closeModal" onClick={()=> setShowModal2(false)}>
+        <div className="closeModal" onClick={closeModal}>
           <i className="fa-solid fa-xmark"></i>
         </div>
         {data.map((datas, i) => {

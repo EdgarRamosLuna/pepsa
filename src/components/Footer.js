@@ -38,8 +38,10 @@ const Footer = () => {
             <i className="fa-solid fa-location-dot"></i>
             </div>
             <div className="item-txt">
-              <p>Col. La Encantada, CP 25307</p>
-              <p>Saltillo Coah, Mex</p>
+              <div className="item-link">
+                <p>Col. La Encantada, CP 25307</p>
+                <p>Saltillo Coah, Mex</p>
+              </div>
             </div>
           </div>
         </div>
@@ -54,8 +56,11 @@ const Footer = () => {
             <div className="item-txt">
               <div className="item-link">
                 <a href="mailto:contacto@serviciospepsa.com">contacto@serviciospepsa.com</a>
+              </div>
+              <div className="item-link">
                 <a href="mailto:jose.aguayo@serviciospepsa.com">jose.aguayo@serviciospepsa.com</a>
               </div>
+              
             </div>
           </div>
         </div>

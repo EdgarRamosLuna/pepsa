@@ -18,6 +18,7 @@ import Loading from './components/Loading';
 import GlobalStyle from './styles/GlobalStyles';
 import Test from './pages/Test';
 import TestImg from './components/TestImg';
+import Lazy from './pages/Lazy';
 
 function App() {
   const {loading, isModal} = useContext(TaskContext);
@@ -35,6 +36,7 @@ function App() {
           <Route path="/portafolio" element={<Portafolio />} />
           <Route path="/contacto" element={<Contacto />} />
         </Route>
+      {/*  <Route path='/lazy'  element={<Lazy /> } />*/}
      </Routes>
     </>
   );
